@@ -1,0 +1,70 @@
+* {
+    font-family: 'Karla', sans-serif;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    background-color: hsl(204, 43%, 93%);
+   
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    gap: 0;
+}
+.card {
+    width: 50vw;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    /* padding: 1.5rem 5.5rem 1.5rem 2rem */
+}
+.upper-div {
+    padding: 1.5rem 0 1.5rem 2rem;
+    width: 80%;
+}
+.header {
+    color: hsl(217, 30%, 42%);
+    font-weight: bolder;
+    font-size: 1.2rem;
+}
+.subdetails {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    color: whitesmoke;
+    /* grid-gap: 1rem */
+}
+.pay {
+    background-color:hsl(218, 22%, 67%) ;
+    padding: 1.5rem 3rem 1.5rem 2rem;
+}
+.whyus {
+    background-color:hsl(223, 31%, 49%);
+    padding: 1.5rem 5rem 1.5rem 2rem;
+
+}
+button {
+
+    background-color: yellowgreen;
+    padding: .8rem 2rem;
+    border-radius: 10px;
+    border: none;
+    color: white;
+}
+
+@media screen and (max-width: 860px)  {
+    .subdetails {
+        display: grid;
+        grid-template-columns: 1fr;
+        color: whitesmoke;
+    }
+    .card {
+        width: 70vw;
+        background-color: whitesmoke;
+        border-radius: 5px;
+        /* padding: 1.5rem 5.5rem 1.5rem 2rem */
+    }
+}
